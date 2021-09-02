@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: url('./images/bg-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+}
+
+.logo{
+    width: 200px;
+    padding-top: 55px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+  
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.left{
+    padding: 60px;
+}
+
+.right{
+    margin-right: 0;
+    padding-top: 110px;
+    padding-left: 20px;
+    padding-right: 30px;
+    
+}
+
+h1 {
+    font-family: 'Poppins';
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    word-spacing: 20;
+    padding-bottom: 25px;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    color: white;
+    /* font-weight: 400; */
+    padding-bottom: 35px;
+    
+}
+
+button{
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid white; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;    
+}
+
+button > p {
+    font-family: 'Poppins';
+    color: hsl(257, 40%, 49%) ;
+    font-size: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    border: none;
+    
+}
+
+button > p:hover{
+    color:white;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.icon-wrapper {
+    
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid white;
+    /* font-size: 3rem; */
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+    align-items: center;
+    padding: 13px;
+    font-size: 25px; 
+    color: white;
+    
+ }
+
+ .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover {
+    color: hsl(300, 69%, 71%);
+ }
+
+ @media screen and (max-width: 450px){
+    body {
+        background: url('./images/bg-desktop.svg');
+        background-color: rgb(92, 30, 155);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 450px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+
+    header{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+    }
+    
+    .left {
+        display: flex;
+        align-items: flex-end;
+        background: url('./images/illustration-mockups.svg') no-repeat;
+        background-size: 250px 250px;  
+        margin: 0;
+        max-height: 290px;
+        max-width: 250px; 
+    }
+    
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        padding-top: 0;   
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 615px;
+        width: 450px; 
+    }
+
+    .right p, h1 {
+        text-align: center;
+        padding: 25px;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+        justify-content: center;
+        
+     }
+}
+
+
+ 
