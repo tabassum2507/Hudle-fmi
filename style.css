@@ -63,25 +63,31 @@ button{
     width: 200px;
     height: 60px;
     border: 1px solid white; 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;    
-}
-
-button > p {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: 'Poppins';
     color: hsl(257, 40%, 49%) ;
     font-size: 20px;
     padding: 10px;
 }
 
+
+/* button > p {
+    font-family: 'Poppins';
+    color: hsl(257, 40%, 49%) ;
+    font-size: 20px;
+    padding: 10px;
+} */
+
 button:hover {
     background-color: hsl(300, 69%, 71%);
     border: none;
+    color:white;
     
 }
 
-button > p:hover{
+/* button > p:hover{
     color:white;
-}
+} */
 
 .icons {
     display: flex;
